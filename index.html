@@ -37,8 +37,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 2rem 1.5rem;
+      padding: 3rem 1.5rem;
       position: relative;
       overflow-x: hidden;
     }
@@ -142,7 +141,9 @@
 
     .sns-section {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
     }
 
     .sns-link {
@@ -170,6 +171,50 @@
       height: 15px;
       fill: currentColor;
       flex-shrink: 0;
+    }
+
+    .book-link {
+      align-items: flex-start;
+      padding: 0.7rem 1rem;
+      max-width: 200px;
+      gap: 0.7rem;
+    }
+
+    .book-cover {
+      width: clamp(36px, 10vw, 54px);
+      height: auto;
+      border-radius: 1px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .book-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      text-align: left;
+      white-space: normal;
+      letter-spacing: 0.04em;
+    }
+
+    .book-main {
+      font-size: 0.78rem;
+      line-height: 1.5;
+      color: var(--white-dim);
+    }
+
+    .book-sub {
+      font-size: 0.65rem;
+      line-height: 1.45;
+      color: var(--gold-dim);
+    }
+
+    .book-link:hover .book-main {
+      color: var(--gold-light);
+    }
+
+    .book-link:hover .book-sub {
+      color: var(--gold);
     }
 
     footer {
@@ -265,11 +310,24 @@
 
     <div class="sns-section">
       <a class="sns-link" href="https://x.com/Night_Owl_2960" target="_blank" rel="noopener noreferrer">
-        <!-- X (旧Twitter) ロゴ -->
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.732-8.835L1.254 2.25H8.08l4.258 5.63 5.906-5.63Zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
         </svg>
         @Night_Owl_2960
+      </a>
+      <a class="sns-link book-link" href="https://amzn.asia/d/07LAccth" target="_blank" rel="noopener noreferrer">
+        <img class="book-cover" src="GPT%20Image%202026年5月16日%2020_44_24.jpg" alt="もう一度、人になるために 書影">
+        <span class="book-title">
+          <span class="book-main">もう一度、人になるために</span>
+          <span class="book-sub">人は、何かを失って初めて、本当に大切なものに気づく</span>
+        </span>
+      </a>
+      <a class="sns-link book-link" href="https://amzn.asia/d/07MYSe8F" target="_blank" rel="noopener noreferrer">
+        <img class="book-cover" src="Image%202026年5月28日%2012_01_00.jpg" alt="果実と種 書影">
+        <span class="book-title">
+          <span class="book-main">果実と種</span>
+          <span class="book-sub">恋愛の甘さと、結婚を育てるということ</span>
+        </span>
       </a>
     </div>
   </main>
