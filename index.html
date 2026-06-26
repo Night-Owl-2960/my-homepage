@@ -211,6 +211,8 @@
     .page-frame .mid.left   { left: -3px; top: 50%;  margin-top: -3px; }
     .page-frame .mid.right  { right: -3px; top: 50%; margin-top: -3px; }
 
+    .sp-br { display: none; }
+
     @media (max-width: 480px) {
       .card {
         padding: 2.5rem 1.5rem;
@@ -222,6 +224,7 @@
         width: 18px;
         height: 18px;
       }
+      .sp-br { display: initial; }
     }
   </style>
 </head>
@@ -251,9 +254,9 @@
     <p class="tagline">作家・クリエイター</p>
 
     <div class="bio">
-      <p>生きた証として、言葉を綴り、モノを作っています。</p>
-      <p>夜の静けさの中で、ひとつひとつ丁寧に。</p>
-      <p>つくることは、存在することです。</p>
+      <p>生きた証として、<br class="sp-br">言葉を綴り、<br class="sp-br">モノを作っています。</p>
+      <p>夜の静けさの中で、<br class="sp-br">ひとつひとつ丁寧に。</p>
+      <p>つくることは、<br class="sp-br">存在することです。</p>
     </div>
 
     <div class="sns-section">
